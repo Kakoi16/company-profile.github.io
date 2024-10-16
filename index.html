@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUA</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS -->
+  <link href="src/css/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar" class="navbar navbar-large bg-white shadow-2xl fixed w-full z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-full">
+          <div class="flex space-x-4">
+            <!-- Logo -->
+            <div>
+              <a href="#" class="flex items-center text-gray-700 hover:text-blue-600"> <!-- Updated hover color -->
+                <svg class="h-6 w-6 text-blue-500 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7m-9-2v12" />
+                </svg>
+                <span class="font-semibold navbar-text navbar-text-large"
+                  style="font-family: 'Poppins', sans-serif;">MyWebsite</span> <!-- Font family applied -->
+              </a>
+            </div>
+          </div>
+
+          <!-- Primary nav links -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#"
+              class="py-4 px-3 navbar-text navbar-text-large text-gray-700 hover:text-blue-600 transition duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring focus:ring-gray-300"
+              style="font-family: 'Poppins', sans-serif;">Home</a>
+            <a href="#"
+              class="py-4 px-3 navbar-text navbar-text-large text-gray-700 hover:text-blue-600 transition duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring focus:ring-gray-300"
+              style="font-family: 'Poppins', sans-serif;">About</a>
+            <a href="#"
+              class="py-4 px-3 navbar-text navbar-text-large text-gray-700 hover:text-blue-600 transition duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring focus:ring-gray-300"
+              style="font-family: 'Poppins', sans-serif;">Services</a>
+            <a href="#"
+              class="py-4 px-3 navbar-text navbar-text-large text-gray-700 hover:text-blue-600 transition duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring focus:ring-gray-300"
+              style="font-family: 'Poppins', sans-serif;">Contact</a>
+          </div>
+
+          <!-- Mobile button -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <!-- Hamburger icon -->
+              <svg class="w-6 h-6 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Cross (X) icon -->
+              <svg class="w-6 h-6 hidden cross-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu hidden md:hidden bg-white shadow-lg absolute w-full left-0 top-full z-50">
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          style="font-family: 'Poppins', sans-serif;">Home</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          style="font-family: 'Poppins', sans-serif;">About</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          style="font-family: 'Poppins', sans-serif;">Services</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          style="font-family: 'Poppins', sans-serif;">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="relative flex justify-center items-center">
+    <video autoplay loop muted playsinline class="w-full h-[40rem] object-cover">
+      <source src="src/img/mp4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 flex items-center justify-start p-4">
+      <div class="text-left text-white ml-8">
+        <span class="block text-2xl md:text-3xl lg:text-4xl font-bold p-2 md:p-3 rounded-lg shadow-lg"
+          style="font-family: 'arvo', serif;">
+          Selamat Datang di Dunia Kecantikan! <br>
+          <span class="text-lg md:text-2xl block mt-2">Temukan Penampilan yang Tepat untuk Anda</span>
+        </span>
+        <button
+          class="mt-4 px-8 py-4 font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg transition transform duration-500 hover:scale-110 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-purple-300 animate-bounce">
+          Belanja Sekarang
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="relative max-w-6xl mx-auto w-full mt-20">
+    <div class="text-center mb-8">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Produk Kami</h1>
+      <hr>
+      <a href="">
+        <p>Lihat Semua</p>
+      </a>
+    </div>
+    <!-- Tombol Kiri -->
+    <button id="scrollLeft"
+      class="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 z-10">
+      ←
+    </button>
+
+    <!-- Kontainer Scroll -->
+    <div id="scrollable-content" class="flex overflow-x-auto space-x-4">
+      <!-- Product Card Template -->
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <img class="w-full h-48 object-cover" src="./src/img/make up all.jpg" alt="Gambar Barang">
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Nama Barang</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 150.000</span></p>
+            <div class="mb-4">
+              <span class="font-semibold">Rating: </span>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <div class="mb-4">
+              <button onclick="toggleSizeList()" class="text-blue-500 hover:underline">Ukuran</button>
+              <div id="sizeContainer" class="hidden mt-2">
+                <div class="flex space-x-2">
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('S')">S</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('M')">M</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('L')">L</div>
+                  <div class="border border-gray-300 rounded-md p-2 text-center cursor-pointer hover:bg-blue-100"
+                    onclick="selectSize('XL')">XL</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Keranjang
+              </button>
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tambahin Card Untuk Penjualan -->
+    </div>
+
+    <!-- Tombol Kanan -->
+    <button id="scrollRight"
+      class="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 z-10">
+      →
+    </button>
+  </div>
+  <!-- HASIL -->
+  <div class="m-10 gap-5 text-center">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Hasil</h1>
+    <div class="flex justify-center gap-5 video-container">
+      <div class="video-box max-w-sm rounded-lg shadow-lg bg-[#f71313] h-96" onclick="expandVideo(this)">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="src/img/Hasil1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-box max-w-sm rounded-lg shadow-lg bg-[#f71313] h-96" onclick="expandVideo(this)">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="src/img/Hasil2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-box max-w-sm rounded-lg shadow-lg bg-[#f71313] h-96" onclick="expandVideo(this)">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="src/img/Hasil3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Sewa -->
+
+  <div class="relative max-w-6xl mx-auto w-full mt-20">
+    <div class="text-center mb-8">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Penyewaan Alat-Alat</h1>
+      <hr>
+      <a href="">
+        <p>Lihat Semua</p>
+      </a>
+    </div>
+    <!-- Tombol Kiri -->
+    <button id="scrollLeftS"
+      class="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 z-10">
+      ←
+    </button>
+    <!-- Kontainer Scroll -->
+    <div id="scrollable-sewa" class="flex overflow-x-auto space-x-4">
+      <div class="flex justify-center p-6">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <div class="hover-img-container w-72 h-96 overflow-hidden rounded-lg shadow-lg relative">
+            <img class="image1 w-full h-full object-cover absolute top-0 left-0" src="./src/img/alatMuka.jpg"
+              alt="Gambar Barang">
+            <img class="image2 w-full h-full object-cover absolute top-0 left-0" src="./src/img/alatMuka2.png"
+              alt="Gambar Barang">
+          </div>
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Alat Rias Muka</h2>
+            <p class="text-lg text-gray-700 mb-4">Harga: <span class="font-semibold">Rp 20.000</span>/ Hari</p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="flex-1 ml-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Sewa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="scrollRightS"
+      class="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 z-10">
+      →
+    </button>
+  </div>
+
+  <!-- JASA -->
+<div class="mt-20 m-5">
+  <div class="text-center mb-8">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Jasa Make up</h1>
+  </div>
+  <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl mx-auto">
+    <!-- Bagian Gambar (Berada di atas pada layar kecil) -->
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end p-6 md:p-0">
+      <img src="src/img/jasa.jpg" alt="Gambar Card"
+        class="w-48 h-48 md:w-full md:h-full object-cover rounded-full md:rounded-none">
+    </div>
+
+    <!-- Bagian Teks -->
+    <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+      <h2 class="text-2xl font-bold text-gray-800">bopit_consuela
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Menerima pemesanan jasa make up untuk make up maupun pernikahan
+      </p>
+      <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Tentang Saya</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Ini adalah Footer -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <!-- Logo dan Deskripsi -->
+    <div class="mb-4 md:mb-0">
+      <a href="#" class="text-2xl font-bold text-pink-500">MUA Name</a>
+      <p class="mt-2 text-gray-400">Mengubah kecantikan, satu wajah pada satu waktu. Layanan tata rias profesional untuk semua acara.</p>
+    </div>
+    <!-- Link Navigasi -->
+    <div class="flex space-x-6">
+      <a href="#services" class="text-gray-400 hover:text-pink-500">Services</a>
+      <a href="#portfolio" class="text-gray-400 hover:text-pink-500">Portfolio</a>
+      <a href="#about" class="text-gray-400 hover:text-pink-500">About</a>
+      <a href="#contact" class="text-gray-400 hover:text-pink-500">Contact</a>
+    </div>
+    <!-- Ikon Sosial Media -->
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-pink-500">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.341 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.062 1.366-.341 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.265.058-1.645.069-4.849.069s-3.584-.011-4.849-.069c-1.366-.062-2.633-.341-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608-.058-1.265-.069-1.645-.069-4.849s.011-3.584.069-4.849c.062-1.366.341-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317 1.265-.058 1.645-.069 4.849-.069zm0-2.163c-3.262 0-3.67.012-4.947.07-1.677.077-3.146.512-4.298 1.664-1.153 1.153-1.588 2.622-1.664 4.298-.058 1.277-.07 1.685-.07 4.947s.012 3.67.07 4.947c.077 1.677.512 3.146 1.664 4.298 1.153 1.153 2.622 1.588 4.298 1.664 1.277.058 1.685.07 4.947.07s3.67-.012 4.947-.07c1.677-.077 3.146-.512 4.298-1.664 1.153-1.153 1.588-2.622 1.664-4.298.058-1.277.07-1.685.07-4.947s-.012-3.67-.07-4.947c-.077-1.677-.512-3.146-1.664-4.298-1.153-1.153-2.622-1.588-4.298-1.664-1.277-.058-1.685-.07-4.947-.07z" />
+          <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+        </svg>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-pink-500">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.675 0h-21.35C.601 0 0 .601 0 1.349v21.302C0 23.399.601 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.789 4.659-4.789 1.325 0 2.462.099 2.795.143v3.24l-1.917.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.588l-.467 3.622h-3.121V24h6.116C23.399 24 24 23.399 24 22.651V1.349C24 .601 23.399 0 22.675 0z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-500">
+    &copy; 2024 MUA Name. All rights reserved.
+  </div>
+</footer>
+
+
+  <script src="src/js/index.js"></script>
+</body>
+
+</html>

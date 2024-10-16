@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Effect with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom TailwindCSS styles */
+        .hover-img-container {
+            position: relative;
+        }
+        .hover-img-container img {
+            transition: opacity 0.5s ease;
+        }
+        .hover-img-container .image2 {
+            opacity: 0;
+        }
+        .hover-img-container:hover .image1 {
+            opacity: 0;
+        }
+        .hover-img-container:hover .image2 {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+    <!-- Card Container -->
+    <div class="hover-img-container w-72 h-96 overflow-hidden rounded-lg shadow-lg relative">
+        <!-- Image 1 (default) -->
+        <img src="https://via.placeholder.com/300x400?text=Image+1" alt="Image 1" class="image1 w-full h-full object-cover absolute top-0 left-0">
+
+        <!-- Image 2 (shown on hover) -->
+        <img src="https://via.placeholder.com/300x400?text=Image+2" alt="Image 2" class="image2 w-full h-full object-cover absolute top-0 left-0">
+    </div>
+
+
+    <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl mx-auto">
+        <!-- Bagian Teks -->
+        <div class="md:w-1/2 p-6 flex flex-col justify-center">
+          <h2 class="text-2xl font-bold text-gray-800">Judul Card</h2>
+          <p class="mt-4 text-gray-600">
+            Ini adalah teks deskripsi yang ada di sebelah kiri. Kamu bisa menambahkan detail lebih lanjut tentang card ini di sini. Gunakan teks yang sesuai dengan konten yang ingin ditampilkan.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Pelajari Lebih Lanjut</a>
+        </div>
+      
+        <!-- Bagian Gambar -->
+        <div class="md:w-1/2">
+          <img src="https://via.placeholder.com/500" alt="Gambar Card" class="w-full h-full object-cover">
+        </div>
+      </div>
+      
+</body>
+</html>
